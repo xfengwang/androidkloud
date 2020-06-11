@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/accessall"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:id="@+id/publicll"
+    android:layout_marginTop="15dp"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:id="@+id/publicselect"
+        android:src="@drawable/accompany_unselect"
+        android:layout_width="25dp"
+        android:padding="2dp"
+        android:layout_height="25dp" />
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/publicicon"
+                android:layout_width="16dp"
+                android:src="@drawable/teampublic1"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/publicname"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:text="@string/access_public"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/publiccontent"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:text="@string/access_public_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/protectll"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/protectselect"
+            android:src="@drawable/accompany_unselect"
+            android:layout_width="25dp"
+            android:padding="2dp"
+            android:layout_height="25dp" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="25dp">
+
+                <ImageView
+                    android:id="@+id/protecticon"
+                    android:layout_width="16dp"
+                    android:src="@drawable/teamprotect1"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:id="@+id/protectname"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/access_protect"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/protectcontent"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:text="@string/access_protect_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/privatell"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="2dp"
+            android:id="@+id/privateselect"
+            android:src="@drawable/accompany_unselect"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_height="25dp">
+
+                <ImageView
+                    android:id="@+id/privateicon"
+                    android:layout_width="16dp"
+                    android:src="@drawable/teamprivate1"
+                    android:layout_height="16dp" />
+
+                <TextView
+                    android:id="@+id/privatename"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/access_private"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/privatecontent"
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:text="@string/access_private_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

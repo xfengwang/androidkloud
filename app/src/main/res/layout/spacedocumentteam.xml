@@ -1,0 +1,155 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_back"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_back2" />
+        </RelativeLayout>
+
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="36dp"
+            android:layout_marginLeft="36dp"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/service"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/image_add"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/addService"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/top_add_doc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/img_notice"
+                android:layout_width="17dp"
+                android:layout_height="19dp"
+                android:padding="10dp"
+                android:src="@drawable/home_page_notice_icon_unchecked" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey" />
+
+    <include layout="@layout/searchcontact" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_9"
+        >
+
+        <TextView
+            android:textSize="@dimen/sp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="@string/current_project"
+            android:textColor="@color/brunette" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_team_switch"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_28"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="17.5dp"
+            android:src="@drawable/icon_team_change"
+            android:layout_width="18.5dp"
+            android:layout_height="18.5dp"/>
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:id="@+id/txt_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hhhhhhhhhhhhhh"
+            android:textColor="@color/colorFont33"
+            android:textSize="@dimen/sp_16"
+            />
+    </LinearLayout>
+
+
+
+
+    <TextView
+            android:textSize="@dimen/sp_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="18dp"
+            android:text="@string/current_project_folder"
+            android:textColor="@color/brunette" />
+    <LinearLayout
+        android:id="@+id/ll_space"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/dp_14"
+        android:textSize="@dimen/sp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dp_18"
+        android:text="@string/Current_doc"
+        android:textColor="@color/brunette" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

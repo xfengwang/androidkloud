@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="@color/black"
+	android:padding="@dimen/dp_10">
+
+	<Button
+		android:id="@+id/btn_dialog_thumbnail_add"
+		android:layout_width="@dimen/dp_53"
+		android:layout_height="@dimen/dp_53"
+		android:background="@color/colorBGbf"
+		android:text="十"
+		android:visibility="gone"
+		android:layout_marginRight="@dimen/dp_5"
+		android:layout_centerVertical="true"
+		android:textColor="@color/white"
+		android:textSize="@dimen/sp_13"
+		android:textStyle="bold" />
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv_dialog_thumbnail"
+		android:layout_width="match_parent"
+		android:layout_toLeftOf="@+id/iv_dialog_thumbnail_close"
+		android:layout_centerVertical="true"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="@dimen/dp_5"
+		android:layout_toRightOf="@id/btn_dialog_thumbnail_add" />
+
+	<ImageView
+		android:id="@+id/iv_dialog_thumbnail_close"
+		android:layout_width="@dimen/dp_30"
+		android:layout_height="@dimen/dp_30"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:src="@drawable/doc_thumbnail_dialog_close_icon" />
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_top"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_logo"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:contentDescription="@string/head"
+        android:scaleType="center"
+        fresco:fadeDuration="500"
+
+        fresco:failureImage="@drawable/app_icon"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@drawable/app_icon"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="false" />
+
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="V1.0.0"
+        android:textColor="@color/txt_color1"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ps"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/PersonInfoTextLabelStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/privacy_statement" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/arrow2" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_server"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_product"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txt_product"
+                style="@style/PersonInfoTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="正式环境" />
+
+            <ImageView
+                android:id="@+id/image_product"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/txt_product"
+                android:src="@drawable/enter_pairing_connected_status_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_test"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txt_test"
+                style="@style/PersonInfoTextLabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="测试环境" />
+
+            <ImageView
+                android:id="@+id/image_test"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/txt_test"
+                android:src="@drawable/enter_pairing_connected_status_icon"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:text="Copyright 2019 Kloud.com All rights reserved."
+        android:textColor="#A2A2A2"
+        android:textSize="12sp" />
+
+</LinearLayout>

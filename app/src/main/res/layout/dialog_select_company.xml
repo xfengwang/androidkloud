@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_meeting_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/switch_company"
+        android:textColor="@color/skyblue"
+        android:textSize="18sp" />
+
+    <ExpandableListView
+        android:layout_weight="1"
+        android:groupIndicator="@null"
+        android:id="@+id/lv_organization"
+        android:divider="@color/lightgrey"
+        android:dividerHeight="0px"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_line" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/satOk"
+            android:textColor="@color/skyblue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/Cancel"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

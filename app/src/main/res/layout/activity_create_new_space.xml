@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/space_name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/inputname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColorHint="#9B9B9B"
+            android:textColor="#3E3F42"
+            android:background="@color/white"
+            android:hint="@string/input_space_name"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selectaccess"
+        android:orientation="horizontal"
+
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/access_option" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/llk"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:checked="true"
+                android:layout_width="25dp"
+                android:layout_height="18dp"/>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:text="@string/sameasteam"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/createteamperassess"   />
+
+</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_create_sync"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/createbtn"
+                android:layout_marginLeft="50dp"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/peertimeselect_bg3"
+                android:gravity="center"
+                android:text="@string/Submit"
+                android:textColor="@color/skyblue"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

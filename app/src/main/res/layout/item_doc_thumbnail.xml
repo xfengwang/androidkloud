@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center">
+
+	<RelativeLayout
+		android:id="@+id/rll_item_doc_thumbnail"
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="@dimen/dp_5"
+		android:layout_marginRight="@dimen/dp_5"
+		android:layout_marginTop="@dimen/dp_4"
+		android:background="@drawable/selector_stroke_green_transparent"
+		android:layout_height="wrap_content">
+	<ImageView
+		android:id="@+id/iv_item_doc_thumbnail"
+		android:layout_width="@dimen/dp_53"
+		android:layout_height="@dimen/dp_53"
+		android:layout_margin="@dimen/dp_1"
+		android:scaleType="centerCrop" />
+	<!--<LinearLayout
+		android:id="@+id/bgisshow2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_gravity="center"
+		android:layout_marginTop="2dp"
+		android:layout_marginBottom="2dp"
+		android:orientation="horizontal"
+		android:padding="1.4dp"
+		android:visibility="gone">-->
+
+	<com.kloudsync.techexcel.view.RoundProgressBar
+		android:id="@+id/rpb_update"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:layout_centerInParent="true"
+		android:layout_gravity="center"
+		android:padding="2dp"
+		android:visibility="gone"
+		app:roundColor="@color/qiangrey"
+		app:roundProgressColor="@color/skyblue"
+		app:roundWidth="3dp"
+		app:textColor="@color/white"
+		app:textSize="12sp" />
+	<!--	</LinearLayout>-->
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/tv_item_thumbnail_delete"
+		android:layout_width="@dimen/dp_10"
+		android:layout_height="@dimen/dp_10"
+		android:background="@drawable/shape_ovar_white"
+		android:text="X"
+		android:visibility="gone"
+		android:gravity="center"
+		android:textSize="@dimen/sp_5"
+		android:textColor="@color/colorFont302fra" />
+
+	<TextView
+		android:id="@+id/tv_item_doc_thumbnail_position"
+		android:layout_below="@id/rll_item_doc_thumbnail"
+		android:layout_width="wrap_content"
+		android:textColor="@color/white"
+		android:layout_marginTop="@dimen/dp_2"
+		android:textSize="@dimen/sp_7"
+		android:layout_centerHorizontal="true"
+		android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/meeting_setting_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rc_white_bg_shape"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="会议标题"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="互动会"
+                android:textColor="@color/green"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6月21日"
+                android:textColor="@color/skyblue"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="  上午10:00-上午10:30"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/hello"
+                android:textColor="@color/skyblue"
+                />
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="name"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/count"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="10dp"
+                android:src="@drawable/arrow2"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/joinmeeting"
+                android:layout_width="130dp"
+                android:background="@drawable/bg_create_sync"
+                android:text="@string/join_meeting"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/cancel"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_width="30dp"
+        android:src="@drawable/icon_close"
+        android:layout_height="30dp" />
+
+
+</LinearLayout>

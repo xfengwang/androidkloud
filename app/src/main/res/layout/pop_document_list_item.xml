@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:fresco="http://schemas.android.com/tools"
+	android:id="@+id/headll"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+
+	android:background="@drawable/selector_gray_white_no_radius"
+	android:gravity="center"
+	android:orientation="horizontal"
+	android:paddingLeft="@dimen/dp_6"
+	android:paddingTop="@dimen/dp_5"
+	android:paddingRight="@dimen/dp_6"
+	android:paddingBottom="@dimen/dp_5">
+
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<com.kloudsync.techexcel.ui.MaskViewGroup
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:containerCornerRadius="10dp"
+			app:containerDeltaLength="8dp"
+			app:containerShadowColor="#1a000000"
+			app:containerShadowRadius="6dp"
+			app:deltaX="0dp"
+			app:deltaY="3dp"
+			app:enable="true">
+			<com.facebook.drawee.view.SimpleDraweeView
+				android:id="@+id/studenticon"
+				android:layout_width="@dimen/dp_50"
+				android:layout_height="@dimen/dp_55"
+				app:roundedCornerRadius="3dp"
+				android:layout_gravity="center_vertical"
+				app:fadeDuration="500"
+				app:roundTopLeft="true"
+				app:roundTopRight="true"
+				app:roundBottomLeft="true"
+				app:roundBottomRight="true"
+				app:failureImage="@drawable/placeholderimg"
+				app:failureImageScaleType="centerInside"
+				app:placeholderImage="@drawable/placeholderimg"
+				app:placeholderImageScaleType="fitCenter"
+
+				/>
+		</com.kloudsync.techexcel.ui.MaskViewGroup>
+
+
+		<!--        </LinearLayout>-->
+
+
+		<LinearLayout
+			android:id="@+id/bgisshow2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center"
+			android:layout_marginTop="2dp"
+			android:layout_marginBottom="2dp"
+			android:orientation="horizontal"
+			android:padding="1.4dp"
+			android:visibility="gone">
+
+			<com.kloudsync.techexcel.view.RoundProgressBar
+				android:id="@+id/rpb_update"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:padding="2dp"
+				app:roundColor="@color/qiangrey"
+				app:roundProgressColor="@color/skyblue"
+				app:roundWidth="3dp"
+				app:textColor="@color/white"
+				app:textSize="12sp" />
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		>
+
+		<RelativeLayout
+			android:id="@+id/layout_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_centerVertical="true"
+				android:id="@+id/studentname"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:maxLines="2"
+				android:layout_marginRight="32dp"
+				android:textColor="#ff191836"
+				android:textSize="@dimen/sp_12" />
+
+			<ImageView
+				android:layout_marginRight="16dp"
+				android:layout_centerVertical="true"
+				android:id="@+id/iv_item_doc_more"
+				android:layout_width="12dp"
+				android:layout_height="28dp"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/icon_item_doc_more" />
+		</RelativeLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/layout_name"
+			android:layout_marginTop="@dimen/dp_5"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+
+				<RelativeLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+					<TextView
+						android:visibility="gone"
+						android:id="@+id/tv_item_create_user_name"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/dp_2"
+						android:layout_marginRight="@dimen/dp_2"
+						android:ellipsize="end"
+						android:singleLine="true"
+						android:text="用户名"
+						android:textColor="@color/colorFont99"
+						android:textSize="@dimen/sp_8" />
+					<TextView
+						android:id="@+id/txt_doc_time"
+						android:singleLine="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="2018.08.28"
+						android:textColor="#ffb9bbc4"
+						android:textSize="10sp"
+						/>
+
+				</RelativeLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/lly_item_doc_yin_xiang_count"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:layout_width="@dimen/dp_7"
+					android:layout_height="@dimen/dp_7"
+					android:src="@drawable/doc_list_yin_xiang_icon" />
+
+				<TextView
+					android:id="@+id/tv_item_yin_xiang_count"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/dp_2"
+					android:text="110"
+					android:textColor="@color/color3d78fb"
+					android:textSize="@dimen/sp_8" />
+			</LinearLayout>
+
+		</LinearLayout>
+	</RelativeLayout>
+
+</LinearLayout>

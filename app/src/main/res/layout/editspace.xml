@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:text="@string/space_name" />
+
+        <EditText
+            android:id="@+id/edit_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:gravity="right|center_vertical"
+            android:hint="@string/input_space_name"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/selectaccess"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+      >
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/access_option"  />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/accessicon"
+                android:layout_gravity="center_vertical"
+                android:layout_width="16dp"
+                android:src="@drawable/teamprivate1"
+                android:layout_height="16dp" />
+            <TextView
+                android:id="@+id/accessname"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:text="@string/access_private"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+          <TextView
+              android:id="@+id/isameid"
+              android:visibility="visible"
+              android:layout_width="wrap_content"
+              android:text="@string/sameasteam2"
+              android:textColor="@color/black"
+              android:layout_marginTop="2dp"
+              android:textSize="12sp"
+              android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_width="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/arrow2"
+            android:layout_height="14dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Enable SyncRoom" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/selectteamctype"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/inviteuserleft"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/teamtypecontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="Select Team Type"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow2" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/spacemember" />
+
+
+                <LinearLayout
+                    android:id="@+id/addmember"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/add_d" />
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/skyblue"
+                        android:text="@string/spacemember" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_member"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/createbtn"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_create_sync"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_marginLeft="50dp"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/peertimeselect_bg3"
+                android:gravity="center"
+                android:text="@string/Cancel"
+                android:textColor="@color/skyblue"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>
